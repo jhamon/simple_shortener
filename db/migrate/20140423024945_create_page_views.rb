@@ -1,10 +1,10 @@
 class CreatePageViews < ActiveRecord::Migration
   def change
     create_table :page_views do |t|
-      t.integer :shortlink_id, null: false
+      t.integer :shortlink_id,    null: false
       t.integer :user_id
-      t.text :referrer
-      t.string :ip_address
+      t.text :referrer,           null: false
+      t.string :ip_address,       null: false
       t.string :user_agent
       t.timestamps
     end
