@@ -12,12 +12,16 @@ gem 'jbuilder', '~> 1.2'
 group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'bullet'
+  gem 'faker'
+  gem 'factory_girl_rails'
   gem 'guard'
   gem 'guard-rails'
+  gem 'guard-rspec'
   gem 'quiet_assets'
   gem 'rb-fsevent'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
 end
 
-gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0', :require => "bcrypt"
