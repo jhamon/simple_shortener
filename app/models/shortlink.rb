@@ -7,7 +7,6 @@ class Shortlink < ActiveRecord::Base
   has_many :page_views
 
   validates :target_url_id, :presence => true
-  validates :owner_id, :presence => true
 
   delegate :url, :to => :target_url, :prefix => false
 
