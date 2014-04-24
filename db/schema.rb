@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140424025032) do
+ActiveRecord::Schema.define(version: 20140424080930) do
 
   create_table "page_views", force: true do |t|
     t.integer  "shortlink_id",             null: false
@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 20140424025032) do
   add_index "page_views", ["shortlink_id"], name: "index_page_views_on_shortlink_id"
 
   create_table "shortlinks", force: true do |t|
-    t.integer  "target_url_id", null: false
-    t.integer  "owner_id"
+    t.integer  "target_url_id",             null: false
+    t.integer  "owner_id",      default: 0
     t.string   "code"
     t.datetime "created_at"
     t.datetime "updated_at"
