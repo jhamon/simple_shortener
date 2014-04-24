@@ -11,15 +11,11 @@ class Shortlink < ActiveRecord::Base
 
   delegate :url, :to => :target_url, :prefix => false
 
-  def code
+  def generate_code!
     # If I wanted to use a base 64 scheme I'd have
     # to roll my own num to string logic, but base 32
     # seems sufficient for my needs.
-    (self.id + 2000).to_s(36)
-  end
-
-  def self.find_by_code
-    target_id = code.to_i(36) - 1500
-    Shortlink.where(:id => target_id).first 
+    self.code = (self.id + 2000).to_s(36).upcase
+    save!
   end
 end
