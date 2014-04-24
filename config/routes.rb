@@ -1,4 +1,8 @@
 SimpleShortner::Application.routes.draw do
+  # Cat backbone routes that are resubmitted while using
+  # pushDown:true.
+  get "/show", :to => redirect("/")
+
   # Catch and redirect our shortlinks
   get "/:code" => "page_views#create"
 
