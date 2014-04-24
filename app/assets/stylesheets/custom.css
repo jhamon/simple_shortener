@@ -1,3 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Kreon|Open+Sans);
+
+
+html, body { 
+  font-family: Open Sans, Helvetica, sans-serif;
+
+            /*background: url(http://grin.hq.nasa.gov/IMAGES/MEDIUM/GPN-2000-000134.jpg) no-repeat center center fixed; */
+    background: url(http://i.imgur.com/Qycw8qm.jpg) no-repeat center center fixed; 
+  /*background: url(http://www.tsene.com/wp-content/uploads/messenger_orbit.jpg) no-repeat center center fixed; */
+  /*background: url(http://newsdesk.si.edu/sites/default/files/photos/WEB11411-2010h_.jpg) no-repeat center center fixed; */
+  /*background: url(https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/t31.0-8/336419_406249042754544_1469625262_o.jpg) no-repeat center center fixed; */
+      background: url(https://scontent-a-sjc.xx.fbcdn.net/hphotos-ash2/t31.0-8/464820_3324799170063_1603866043_o.jpg) no-repeat center center fixed; 
+  /*background: url(http://37.media.tumblr.com/738750bb061d484aad112a89548672d5/tumblr_n10mwz4NQo1st5lhmo1_1280.jpg) no-repeat center center fixed; */
+  /*background: url(http://i.imgur.com/43Ip0Ww.jpg) no-repeat center center fixed; */
+  /*background: url(http://payload88.cargocollective.com/1/8/282864/4071568/DSC_0817_o.jpg) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.short-link-focus, {
+  font-size: 2em;
+}
+
+input[type=text] {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  color: #000;
+  margin-bottom: 5px;
+  border: none;
+  font-size: 20px;
+  background-color: #D3D0D6;
+  width: 100%;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#show-shortcode, .another {
+  /*font-weight: bold;*/
+  font-size: 1.15em;
+}
+
+
 /*
  * Globals
  */
@@ -13,10 +64,10 @@ a:hover {
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
+  color: #FFF;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: #333;
+  border: 0px solid #FFF;
 }
 
 
@@ -27,7 +78,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  /*background-color: #333;*/
 }
 body {
   color: #fff;
