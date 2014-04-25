@@ -19,7 +19,13 @@ SimpleShortner.appRouter = Backbone.Router.extend({
   },
 
   _swapView: function (newView) {
-    this.$rootEl.html(newView.render().$el);
+    // Append as hidden
+    newView.render();
+    this.$rootEl.append(newView.render().$el.hide());
+
+    this._currentView && this._currentView.$el.fadeOut(800);
+    newView.$el.fadeIn(800);
+    
     this._currentView && this._currentView.remove();
     this._currentView = newView;
   }
