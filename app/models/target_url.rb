@@ -7,7 +7,7 @@ class TargetUrl < ActiveRecord::Base
 
   before_save :format_url, :on => :create
 
-  PROTOCOLS = ["http://", "https://"] 
+  PROTOCOLS = ['http://', 'https://'] 
   DEFAULT_PROTOCOL = 'http://'
 
   def self.has_protocol?(url)
