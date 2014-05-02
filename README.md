@@ -7,7 +7,7 @@
 - Minimal Backbone.js/jQuery
 - Twitter Bootstrap
 
-I created this Backbone/Rails app because sometimes it's nice to have shortlinks, but I wanted to retain control of my links rather than routing them through a third-party service I have no control over.  In it's present form, it only has one user-facing feature: enter a URL and recieve back a valid shortlink.  
+I created this Backbone/Rails app because sometimes it's nice to have shortlinks, but I wanted to retain control of my links rather than routing them through a third-party service I have no control over.  In its present form, it only has one user-facing feature: enter a URL and recieve back a valid shortlink.  
 
 <a href="http://www.jlh.io">
 ![jlh.io](http://www.github.com/jhamon/simple_shortener/raw/master/screenshot.png)
